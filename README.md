@@ -1,8 +1,7 @@
 Bike Rental - Axon demo application
 ====================================
 
-The Bike Rental application is a simple application that demonstrates the features of Axon Framework, Axon Server, and
-optionally AxonIQ Console.
+The Bike Rental application is a simple application that demonstrates the features of Axon Framework, Axon Server, and optionally AxonIQ Console.
 
 ## Setting up the workspace
 
@@ -13,18 +12,18 @@ Here are some configuration items I use to run the application:
 * JDK version 11 or up
 * Maven 3.8.6 (although you can use the Maven Wrapper from the workspace)
 
-Sometimes, just letting the IDE build the project is siffucient. Some people have reported that the UI doesn't build correctly in that case. To be sure, you can run a `mvn package` to buld the whold project.
+Sometimes, just letting the IDE build the project is sufficient. Some people have reported that the UI doesn't build correctly in that case. To be sure, you can run a `mvn package` to build the whole project.
 
 ## Install Axon Server
 
-First, you need Axon Server. It's free, and powerful.
+First, you need Axon Server. It's free and powerful.
 
 ### Using Docker
 If you use Docker, simply run:
 
 `docker run -d --name axonserver -p 8024:8024 -p 8124:8124 -e AXONIQ_AXONSERVER_DEVMODE_ENABLED=true -e AXONIQ_AXONSERVER_STANDALONE=true axoniq/axonserver`
 
-Not all parameters are mandatory, but these setting will run Axon Server in Developer Mode and initialize it immediately as a standalone node (meaning no clustering, which is paid feature).
+Not all parameters are mandatory, but these settings will run Axon Server in Developer Mode and initialize it immediately as a standalone node (meaning no clustering, which is a paid feature).
 
 ### Regular download
 You can also download Axon Server as an executable jar file from [AxonIQ download page](https://www.axoniq.io/download). 
@@ -39,7 +38,7 @@ You can also download Axon Server as an executable jar file from [AxonIQ downloa
 
 ## Start the application
 
-The application consists of 2 modules that need to be started individually. Both modules are needed to make the demo work, but it doesn't matter in which order they are started.
+The application consists of two modules that need to be started individually. Both modules are needed to make the demo work, but it doesn't matter in which order they are started.
 
 Simply run the Spring Boot application:
 
